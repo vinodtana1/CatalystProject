@@ -1,0 +1,225 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  /* font-family: sans-serif; */
+  font-family: "Roboto";
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.background {
+  width: 100%;
+  height: 650px;
+  /* position: absolute; */
+  z-index: -1;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.main-container {
+  margin-top: -600px;
+  color: #fff;
+}
+.header-containter {
+  height: 65px;
+  padding: 20px 50px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.get-ready-text {
+  color: #fff;
+
+  text-align: center;
+  /* font-family: Inter; */
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px; /* 116.364% */
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  margin-top: 45px;
+}
+.get-ready-sub-text {
+  color: #fff;
+  text-align: center;
+  /* font-family: Inter; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  margin-bottom: 40px;
+}
+.footer-containter {
+  height: auto;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer-text-sp {
+  padding: 20px;
+  text-align: center;
+}
+.exten-content-full {
+  width: 750px;
+  margin: auto;
+  text-align: center;
+}
+.header-top-sec span {
+  color: #202020;
+
+  /* font-family: Inter; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.body-text-containter {
+  padding: 50px;
+  height: 700px;
+  margin-bottom: 50px;
+}
+.available-for-sec {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.available-for-sec > div {
+  display: flex;
+  gap: 30px;
+}
+.input-box-sec {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 5px 5px 5px 24px;
+  /* justify-content: center; */
+
+  /* gap: 30px; */
+  margin-top: 50px;
+  border-radius: 40px;
+  background: #fff;
+  position: relative;
+}
+.exten-content-top img {
+}
+.input-box-sec input {
+  height: 50px;
+  width: 80%;
+  border: none;
+  color: #9fa8c2;
+
+  /* font-family: Inter; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+.input-box-sec input:focus {
+  border: none;
+}
+.input-box-sec button {
+  padding: 12px 33px 12px 32px;
+  border-radius: 36px;
+  background: #741eff;
+  border: none;
+  width: 160px;
+  cursor: pointer;
+  color: #fff;
+
+  /* font-family: Inter; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.footer-text-sp {
+  color: #2f374f;
+  padding: 20px;
+  text-align: center;
+  /* font-family: Inter; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px;
+}
+.footer-bottom {
+  display: grid;
+  /* height: 52px; */
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-border-left {
+  border-radius: 0px 100px 0px 0px;
+  background: #741eff;
+}
+.footer-border-center {
+  color: #000;
+  /* padding-top: 17px; */
+  text-align: center;
+  /* font-family: Inter; */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  padding-bottom: 20px;
+}
+.footer-border-right {
+  border-radius: 100px 0px 0px 0px;
+  background: #741eff;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .background {
+    height: 700px;
+  }
+  .exten-content-full {
+    width: 90%;
+  }
+  .main-container {
+    margin-top: -650px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-top-sec {
+    text-align: center;
+  }
+  .body-text-containter {
+    padding: 20px;
+  }
+  .exten-content-top img {
+    width: 70%;
+  }
+  .get-ready-text {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .get-ready-sub-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .available-for-sec > div {
+    gap: 15px;
+  }
+  .exten-content-full {
+    width: 90%;
+  }
+  .input-box-sec {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .input-box-sec button {
+    padding: 5px;
+    width: 120px;
+  }
+}
